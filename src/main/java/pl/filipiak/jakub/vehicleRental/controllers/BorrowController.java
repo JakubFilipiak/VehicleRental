@@ -2,6 +2,7 @@ package pl.filipiak.jakub.vehicleRental.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.filipiak.jakub.vehicleRental.models.dtos.BorrowDto;
 
 import java.time.LocalDate;
 
