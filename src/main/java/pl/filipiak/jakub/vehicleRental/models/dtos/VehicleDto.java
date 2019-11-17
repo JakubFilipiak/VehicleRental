@@ -8,6 +8,10 @@ public class VehicleDto {
     private String producerName;
     private String color;
     private String productionDate;
-    private String borrowerId;
+
+    private long borrowId;
     private String borrowDate;
+
+    private long borrowerId;
+    private String borrowerName;
 }

@@ -1,4 +1,11 @@
 package pl.filipiak.jakub.vehicleRental.models;
 
-public class Bike {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@Entity
+public class Bike extends Vehicle {
+
+    @Column(unique = true)
+    private long number;
 }

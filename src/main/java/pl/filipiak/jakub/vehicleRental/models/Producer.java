@@ -10,6 +10,7 @@ public class Producer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String name;
 
     @OneToMany(mappedBy = "producer", cascade = CascadeType.ALL)

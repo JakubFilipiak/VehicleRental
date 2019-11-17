@@ -10,6 +10,8 @@ public class Borrower {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String name;
+
     @OneToMany(mappedBy = "borrower", cascade = CascadeType.ALL)
     private Set<Borrow> borrows;
 }
