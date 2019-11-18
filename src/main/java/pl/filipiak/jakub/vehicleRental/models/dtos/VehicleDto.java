@@ -1,5 +1,13 @@
 package pl.filipiak.jakub.vehicleRental.models.dtos;
 
+import lombok.*;
+
+import java.util.Set;
+
+@Getter
+@EqualsAndHashCode
+@ToString
+@Builder
 public class VehicleDto {
 
     private long id;
@@ -9,9 +17,6 @@ public class VehicleDto {
     private String color;
     private String productionDate;
 
-    private long borrowId;
-    private String borrowDate;
-
-    private long borrowerId;
-    private String borrowerName;
+    @Setter
+    private Set<BorrowDto> borrows;
 }

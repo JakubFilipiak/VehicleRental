@@ -1,8 +1,11 @@
 package pl.filipiak.jakub.vehicleRental.models;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.util.Set;
 
+@Getter
 @Entity
 public class Borrower {
 

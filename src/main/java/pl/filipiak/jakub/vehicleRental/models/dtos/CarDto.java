@@ -1,5 +1,8 @@
 package pl.filipiak.jakub.vehicleRental.models.dtos;
 
+import lombok.Getter;
+
+@Getter
 public class CarDto {
 
     private long id;

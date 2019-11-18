@@ -4,4 +4,9 @@ public class BorrowerDto {
 
     private long id;
     private String name;
+
+    public BorrowerDto(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

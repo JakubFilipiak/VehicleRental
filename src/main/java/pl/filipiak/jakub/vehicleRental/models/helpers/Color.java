@@ -7,13 +7,20 @@ public enum Color {
     BLUE("Blue"),
     OTHER("Other");
 
-    private String color;
+    private String textValue;
 
-    Color(String color) {
-        this.color = color;
+    Color(String textValue) {
+        this.textValue = textValue;
     }
 
     public String getStringValue() {
-        return color;
+        return textValue;
+    }
+
+    public static Color fromString(String textValue) {
+        for (Color color : Color.values()) {
+            if (color.textValue.equals(textValue)) return color;
+        }
+        return OTHER;
     }
 }

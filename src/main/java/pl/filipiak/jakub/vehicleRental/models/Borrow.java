@@ -1,8 +1,11 @@
 package pl.filipiak.jakub.vehicleRental.models;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
+@Getter
 @Entity
 public class Borrow {
 

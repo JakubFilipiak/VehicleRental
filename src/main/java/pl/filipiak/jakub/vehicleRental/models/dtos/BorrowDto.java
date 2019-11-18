@@ -1,17 +1,17 @@
 package pl.filipiak.jakub.vehicleRental.models.dtos;
 
+import lombok.Setter;
+
 public class BorrowDto {
 
     private long id;
     private String date;
 
-    private long vehicleId;
-    private String vehicleType;
-    private String vehicleNameOrNumber;
-    private String vehicleProducerName;
-    private String vehicleColor;
-    private String vehicleProductionDate;
+    @Setter
+    private BorrowerDto borrowerDto;
 
-    private long borrowerId;
-    private String borrowerName;
+    public BorrowDto(long id, String date) {
+        this.id = id;
+        this.date = date;
+    }
 }
